@@ -1,5 +1,6 @@
 resource "aws_network_interface" "docker" {
   subnet_id = aws_subnet.my_subnet.id
+}
 
 resource "tls_private_key" "docker" {
   algorithm = "RSA"
